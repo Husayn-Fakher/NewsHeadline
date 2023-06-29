@@ -14,7 +14,7 @@ class Utils {
 
             try {
                 encoded = URLEncoder.encode(url, StandardCharsets.UTF_8.toString())
-            } catch (e: UnsupportedEncodingException) {
+            } catch (e: Exception) {
 
                 encoded = URLEncoder.encode(DEFAULT_IMAGE_URL, StandardCharsets.UTF_8.toString())
             }
